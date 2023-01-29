@@ -1,0 +1,12 @@
+AR processor behavioral C:/Users/moham/Desktop/3/code/basic_computer/processor.vhd sub00/vhpl10 1674074288
+AR reg8 behavioral C:/Users/moham/Desktop/3/code/basic_computer/reg8.vhd sub00/vhpl01 1672781077
+EN reg16 NULL C:/Users/moham/Desktop/3/code/basic_computer/reg16.vhd sub00/vhpl02 1672781205
+AR reg16 behavioral C:/Users/moham/Desktop/3/code/basic_computer/reg16.vhd sub00/vhpl03 1672781206
+EN computer NULL C:/Users/moham/Desktop/3/code/basic_computer/computer.vhd sub00/vhpl08 1674074289
+EN memory NULL C:/Users/moham/Desktop/3/code/basic_computer/memory.vhd sub00/vhpl06 1674074285
+EN processor NULL C:/Users/moham/Desktop/3/code/basic_computer/processor.vhd sub00/vhpl09 1674074287
+AR memory behavioral C:/Users/moham/Desktop/3/code/basic_computer/memory.vhd sub00/vhpl07 1674074286
+AR alu behavioral C:/Users/moham/Desktop/3/code/basic_computer/alu.vhd sub00/vhpl05 1674074284
+EN reg8 NULL C:/Users/moham/Desktop/3/code/basic_computer/reg8.vhd sub00/vhpl00 1672781076
+AR computer behavioral C:/Users/moham/Desktop/3/code/basic_computer/computer.vhd sub00/vhpl11 1674074290
+EN alu NULL C:/Users/moham/Desktop/3/code/basic_computer/alu.vhd sub00/vhpl04 1674074283

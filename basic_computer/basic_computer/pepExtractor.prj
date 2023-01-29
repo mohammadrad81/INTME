@@ -1,0 +1,4 @@
+work	"alu.vhd"
+work	"computer.vhd"
+work	"memory.vhd"
+work	"processor.vhd"

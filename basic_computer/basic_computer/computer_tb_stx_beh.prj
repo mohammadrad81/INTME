@@ -1,0 +1,5 @@
+vhdl isim_temp "alu.vhd"
+vhdl isim_temp "processor.vhd"
+vhdl isim_temp "memory.vhd"
+vhdl isim_temp "computer.vhd"
+vhdl isim_temp "computer_tb.vhd"

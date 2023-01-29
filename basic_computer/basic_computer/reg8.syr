@@ -1,0 +1,390 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Reading design: reg8.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "reg8.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "reg8"
+Output Format                      : NGC
+Target Device                      : xc3s700a-4-fg484
+
+---- Source Options
+Top Module Name                    : reg8
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/moham/Desktop/3/code/basic_computer/reg8.vhd" in Library work.
+Entity <reg8> compiled.
+Entity <reg8> (Architecture <Behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <reg8> in library <work> (architecture <Behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <reg8> in library <work> (Architecture <Behavioral>).
+Entity <reg8> analyzed. Unit <reg8> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <reg8>.
+    Related source file is "C:/Users/moham/Desktop/3/code/basic_computer/reg8.vhd".
+    Found 8-bit register for signal <q>.
+    Found 8-bit up counter for signal <val>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <reg8> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 1
+ 8-bit register                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 8-bit up counter                                      : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <reg8> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block reg8, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 16
+ Flip-Flops                                            : 16
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : reg8.ngr
+Top Level Output File Name         : reg8
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 20
+
+Cell Usage :
+# BELS                             : 42
+#      GND                         : 1
+#      INV                         : 1
+#      LUT2                        : 17
+#      LUT3                        : 8
+#      MUXCY                       : 7
+#      XORCY                       : 8
+# FlipFlops/Latches                : 16
+#      FDCE                        : 8
+#      FDCPE                       : 8
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 19
+#      IBUF                        : 11
+#      OBUF                        : 8
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s700afg484-4 
+
+ Number of Slices:                       14  out of   5888     0%  
+ Number of Slice Flip Flops:             16  out of  11776     0%  
+ Number of 4 input LUTs:                 26  out of  11776     0%  
+ Number of IOs:                          20
+ Number of bonded IOBs:                  20  out of    372     5%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 16    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+clr                                | IBUF                   | 8     |
+q_0__and0000(q_0__and00001:O)      | NONE(q_0)              | 1     |
+q_0__and0001(q_0__and00011:O)      | NONE(q_0)              | 1     |
+q_1__and0000(q_1__and00001:O)      | NONE(q_1)              | 1     |
+q_1__and0001(q_1__and00011:O)      | NONE(q_1)              | 1     |
+q_2__and0000(q_2__and00001:O)      | NONE(q_2)              | 1     |
+q_2__and0001(q_2__and00011:O)      | NONE(q_2)              | 1     |
+q_3__and0000(q_3__and00001:O)      | NONE(q_3)              | 1     |
+q_3__and0001(q_3__and00011:O)      | NONE(q_3)              | 1     |
+q_4__and0000(q_4__and00001:O)      | NONE(q_4)              | 1     |
+q_4__and0001(q_4__and00011:O)      | NONE(q_4)              | 1     |
+q_5__and0000(q_5__and00001:O)      | NONE(q_5)              | 1     |
+q_5__and0001(q_5__and00011:O)      | NONE(q_5)              | 1     |
+q_6__and0000(q_6__and00001:O)      | NONE(q_6)              | 1     |
+q_6__and0001(q_6__and00011:O)      | NONE(q_6)              | 1     |
+q_7__and0000(q_7__and00001:O)      | NONE(q_7)              | 1     |
+q_7__and0001(q_7__and00011:O)      | NONE(q_7)              | 1     |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 3.976ns (Maximum Frequency: 251.509MHz)
+   Minimum input arrival time before clock: 4.572ns
+   Maximum output required time after clock: 5.531ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 3.976ns (frequency: 251.509MHz)
+  Total number of paths / destination ports: 44 / 16
+-------------------------------------------------------------------------
+Delay:               3.976ns (Levels of Logic = 9)
+  Source:            val_0 (FF)
+  Destination:       val_7 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: val_0 to val_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             4   0.591   0.619  val_0 (val_0)
+     LUT3:I2->O            1   0.648   0.000  Mcount_val_lut<0> (Mcount_val_lut<0>)
+     MUXCY:S->O            1   0.632   0.000  Mcount_val_cy<0> (Mcount_val_cy<0>)
+     MUXCY:CI->O           1   0.065   0.000  Mcount_val_cy<1> (Mcount_val_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  Mcount_val_cy<2> (Mcount_val_cy<2>)
+     MUXCY:CI->O           1   0.065   0.000  Mcount_val_cy<3> (Mcount_val_cy<3>)
+     MUXCY:CI->O           1   0.065   0.000  Mcount_val_cy<4> (Mcount_val_cy<4>)
+     MUXCY:CI->O           1   0.065   0.000  Mcount_val_cy<5> (Mcount_val_cy<5>)
+     MUXCY:CI->O           0   0.065   0.000  Mcount_val_cy<6> (Mcount_val_cy<6>)
+     XORCY:CI->O           1   0.844   0.000  Mcount_val_xor<7> (Mcount_val7)
+     FDCE:D                    0.252          val_7
+    ----------------------------------------
+    Total                      3.976ns (3.357ns logic, 0.619ns route)
+                                       (84.4% logic, 15.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 112 / 24
+-------------------------------------------------------------------------
+Offset:              4.572ns (Levels of Logic = 10)
+  Source:            load (PAD)
+  Destination:       val_7 (FF)
+  Destination Clock: clk rising
+
+  Data Path: load to val_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            10   0.849   0.962  load_IBUF (load_IBUF)
+     LUT3:I1->O            1   0.643   0.000  Mcount_val_lut<0> (Mcount_val_lut<0>)
+     MUXCY:S->O            1   0.632   0.000  Mcount_val_cy<0> (Mcount_val_cy<0>)
+     MUXCY:CI->O           1   0.065   0.000  Mcount_val_cy<1> (Mcount_val_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  Mcount_val_cy<2> (Mcount_val_cy<2>)
+     MUXCY:CI->O           1   0.065   0.000  Mcount_val_cy<3> (Mcount_val_cy<3>)
+     MUXCY:CI->O           1   0.065   0.000  Mcount_val_cy<4> (Mcount_val_cy<4>)
+     MUXCY:CI->O           1   0.065   0.000  Mcount_val_cy<5> (Mcount_val_cy<5>)
+     MUXCY:CI->O           0   0.065   0.000  Mcount_val_cy<6> (Mcount_val_cy<6>)
+     XORCY:CI->O           1   0.844   0.000  Mcount_val_xor<7> (Mcount_val7)
+     FDCE:D                    0.252          val_7
+    ----------------------------------------
+    Total                      4.572ns (3.610ns logic, 0.962ns route)
+                                       (79.0% logic, 21.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              5.531ns (Levels of Logic = 1)
+  Source:            q_7 (FF)
+  Destination:       q<7> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: q_7 to q<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCPE:C->Q            1   0.591   0.420  q_7 (q_7)
+     OBUF:I->O                 4.520          q_7_OBUF (q<7>)
+    ----------------------------------------
+    Total                      5.531ns (5.111ns logic, 0.420ns route)
+                                       (92.4% logic, 7.6% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 9.56 secs
+ 
+--> 
+
+Total memory usage is 4481672 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

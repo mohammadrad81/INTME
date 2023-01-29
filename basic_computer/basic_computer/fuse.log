@@ -1,0 +1,25 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/moham/Desktop/3/code/basic_computer/computer_tb_isim_beh.exe -prj C:/Users/moham/Desktop/3/code/basic_computer/computer_tb_beh.prj work.computer_tb 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 1
+Turning on mult-threading, number of parallel sub-compilation jobs: 0 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/moham/Desktop/3/code/basic_computer/alu.vhd" into library work
+Parsing VHDL file "C:/Users/moham/Desktop/3/code/basic_computer/processor.vhd" into library work
+Parsing VHDL file "C:/Users/moham/Desktop/3/code/basic_computer/memory.vhd" into library work
+Parsing VHDL file "C:/Users/moham/Desktop/3/code/basic_computer/computer.vhd" into library work
+Parsing VHDL file "C:/Users/moham/Desktop/3/code/basic_computer/computer_tb.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling architecture behavioral of entity memory [memory_default]
+Compiling architecture behavioral of entity alu [alu_default]
+Compiling architecture behavioral of entity processor [processor_default]
+Compiling architecture behavioral of entity computer [computer_default]
+Compiling architecture behavior of entity computer_tb
+Time Resolution for simulation is 1ps.
+Compiled 12 VHDL Units
+Built simulation executable C:/Users/moham/Desktop/3/code/basic_computer/computer_tb_isim_beh.exe
+Fuse Memory Usage: 36168 KB
+Fuse CPU Usage: 327 ms

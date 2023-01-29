@@ -1,0 +1,39 @@
+V3 21
+FL C:/Users/moham/Desktop/3/code/basic_computer/alu.vhd 2023/01/18.12:16:49 P.20131013
+EN work/alu 1674074283 FL C:/Users/moham/Desktop/3/code/basic_computer/alu.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/alu/Behavioral 1674074284 \
+      FL C:/Users/moham/Desktop/3/code/basic_computer/alu.vhd EN work/alu 1674074283
+FL C:/Users/moham/Desktop/3/code/basic_computer/computer.vhd 2023/01/19.00:07:48 P.20131013
+EN work/computer 1674074289 \
+      FL C:/Users/moham/Desktop/3/code/basic_computer/computer.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/computer/Behavioral 1674074290 \
+      FL C:/Users/moham/Desktop/3/code/basic_computer/computer.vhd \
+      EN work/computer 1674074289 CP memory CP processor
+FL C:/Users/moham/Desktop/3/code/basic_computer/memory.vhd 2023/01/18.23:41:36 P.20131013
+EN work/memory 1674074285 \
+      FL C:/Users/moham/Desktop/3/code/basic_computer/memory.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/memory/Behavioral 1674074286 \
+      FL C:/Users/moham/Desktop/3/code/basic_computer/memory.vhd EN work/memory 1674074285
+FL C:/Users/moham/Desktop/3/code/basic_computer/processor.vhd 2023/01/19.00:07:57 P.20131013
+EN work/processor 1674074287 \
+      FL C:/Users/moham/Desktop/3/code/basic_computer/processor.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/processor/Behavioral 1674074288 \
+      FL C:/Users/moham/Desktop/3/code/basic_computer/processor.vhd \
+      EN work/processor 1674074287 CP alu
+FL C:/Users/moham/Desktop/3/code/basic_computer/reg16.vhd 2023/01/04.00:56:29 P.20131013
+EN work/reg16 1672781205 \
+      FL C:/Users/moham/Desktop/3/code/basic_computer/reg16.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/reg16/Behavioral 1672781206 \
+      FL C:/Users/moham/Desktop/3/code/basic_computer/reg16.vhd EN work/reg16 1672781205
+FL C:/Users/moham/Desktop/3/code/basic_computer/reg8.vhd 2023/01/04.00:54:31 P.20131013
+EN work/reg8 1672781076 FL C:/Users/moham/Desktop/3/code/basic_computer/reg8.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/reg8/Behavioral 1672781077 \
+      FL C:/Users/moham/Desktop/3/code/basic_computer/reg8.vhd EN work/reg8 1672781076
